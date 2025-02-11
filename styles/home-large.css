@@ -28,7 +28,7 @@ header {
     background-color: var(--primary-color);
     padding: 10px;
   }
-  
+
   .nav {
     width: 100%;
     display: flex;
@@ -90,10 +90,8 @@ main {
 
   padding: 0.5rem;
 
-  border: 1px solid #ccc;
   border-radius: 0.7rem;
-  
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+  border: 2px solid var(--accent-color);
   
   background-color: var(--secondary-color);
 }
@@ -163,12 +161,12 @@ main {
 }
 
 .box-side.top-left {
-  top: 1%;
+  top: 12%;
   left: 1%;
 }
 
 .box-side.bottom-right {
-  bottom: 1%;
+  bottom: 20%;
   right: 3%;
 }
 
@@ -176,52 +174,146 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.7rem;
   margin: 0 auto;
 }
 
 /* Boxes in the middle */
 .box-middle {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: var(--secondary-color);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 6.35rem;
+  gap: 2rem;
+  
+  max-width: 60%;
   padding: 0;
   margin: 0;
 }
 
-.box-middle h2 {
+.box-middle1, .box-middle2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  
+  background-color: var(--secondary-color);
+  padding-bottom: 1rem;
+  
+  border-radius: 0.7rem;
+  border: 2px solid var(--accent-color);
+
+  width: 100%;
+}
+
+.box-middle1 h2 {
   grid-column: 1;
+  grid-row: 1;
+  
   border-radius: 0.5rem;
+  border: 2px solid var(--accent-color);
   background-color: var(--primary-color);
   color: var(--font-color);
+  
   padding: 0.7rem;
   margin: 1rem;
-  width: 45%;
+  width: 60%;
 
   font-family: var(--font-title);
   font-size: 1.2rem;
   font-weight: 200;
 }
 
-.box-middle p {
-  grid-column: 1;
-  max-width: 80%;
-  text-align: justify;
+.box-middle1 p {
+  max-width: 90%;
   justify-self: center;
   align-self: center;
-  padding: 0.7rem;
-  margin: 1rem;
-  border: var(--accent-color) 2px solid;
+  
+  margin: 0;
+  padding: 0.5rem;
+
+  font-family: var(--font-text);
+  font-size: small;
+  font-weight: 200;
+
+  line-height: 1.6;
+  text-align: justify;
 }
 
-.box-middle img {
+.box-middle1 p:first-of-type {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+}
+
+.box-middle1 p:last-of-type {
+  grid-column: 1 / span 2;
+  max-width: 100%;
+  justify-self: stretch;
+}
+
+.box-middle1 img {
   grid-column: 2;
+  grid-row: 2;
+  
   max-width: 90%;
   max-height: 90%;
+  
   justify-self: center;
+  align-self: center;
+  
+  border: var(--accent-color) 4px solid;
+  border-radius: 0.7rem;
+}
+
+.box-middle2 h2 {
+  grid-column: 2;
+  grid-row: 1;
+  
+  border-radius: 0.5rem;
+  border: 2px solid var(--accent-color);
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  
+  padding: 0.7rem;
+  margin: 1rem;
+  width: -80%;
+
+  text-align: right;
+
+  font-family: var(--font-title);
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+.box-middle2 p {
+  max-width: 98%;
+  justify-self: left;
+  align-self: left;
+  
+  margin: 0;
+  padding: 0.5rem;
+
+  font-family: var(--font-text);
+  font-size: small;
+  font-weight: 200;
+
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.box-middle2 p:first-of-type {
+  grid-column: 2;
+  align-self: center;
+}
+
+.box-middle2 img {
+  grid-column: 1;
+  grid-row: 2;
+  max-width: 90%;
+  max-height: 90%;
+  
+  justify-self: center;
+  align-self: center;
+  
   border: var(--accent-color) 4px solid;
   border-radius: 0.7rem;
 }
