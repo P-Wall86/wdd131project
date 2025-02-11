@@ -7,6 +7,7 @@
     --secondary-color: #f0f4f8;
     --accent-color: #FFC632;
     --font-color: #EBEBEB;
+    --font-family: "Bevan", serif;
   }
 
   html, body {
@@ -25,6 +26,7 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 10px;
+    font-family:var(--font-family);
   }
   
   .nav {
