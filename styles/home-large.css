@@ -64,6 +64,10 @@ header {
     color: var(--accent-color);
   }
 
+  .hamburger {
+    display: none;
+  }
+
 /* Header ends here */
 /* Hero starts here */
 
