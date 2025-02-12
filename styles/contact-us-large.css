@@ -8,6 +8,7 @@
     --accent-color: #FFC632;
     --font-color: #EBEBEB;
     --font-title: "Bevan", serif;
+    --font-text: "Cutive", serif;
   }
 
   html, body {
@@ -26,7 +27,6 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 10px;
-    font-family: var(--font-title);
   }
   
   .nav {
@@ -54,11 +54,18 @@ header {
   .nav a {
     text-decoration: none;
     color: var(--font-color);
+
+    font-family: var(--font-title);
     font-size: 20px;
+    font-size:x-large;
   }
   
   .nav a.active {
     color: var(--accent-color);
+  }
+
+  .hamburger {
+    display: none;
   }
 
 /* Header ends here */
@@ -92,6 +99,12 @@ footer {
 .footer-column {
     flex: 1;
     padding: 10px;
+    
+    font-family: var(--font-text);
+    font-size: small;
+    font-weight: 400;
+
+    line-height: 1.7;
 }
 
 .footer-column:last-child {

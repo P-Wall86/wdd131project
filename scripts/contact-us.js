@@ -18,3 +18,13 @@ navLinks.forEach(link => {
         link.classList.add('active');
     }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('.nav');
+  
+    hamburger.addEventListener('click', () => {
+      console.log('Hamburger clicked');
+      nav.classList.toggle('active');
+    });
+  });
