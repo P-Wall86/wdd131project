@@ -33,28 +33,47 @@
         </div> 
     </header>
     <main>
+        <div>
+            <h1>Our Courses</h1>
+        </div>
+
         <div id="card-container">
             <button id="prev-card">&lt;</button>
             <div class="card"></div>
             <button id="next-card">&gt;</button>
         </div>
+
+        <section class="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications-content">
+                <ul class="certification-list">
+                    <li><a href="#" data-cert="ielts">IELTS</a></li>
+                    <li><a href="#" data-cert="toefl">TOEFL</a></li>
+                    <li><a href="#" data-cert="first-cert">First Cert</a></li>
+                    <li><a href="#" data-cert="cambridge-advanced">Cambridge Advanced</a></li>
+                    <li><a href="#" data-cert="proficiency">Proficiency</a></li>
+                </ul>
+                <div class="certification-info">
+                    <h3 id="cert-title">Select a Certification</h3>
+                    <p id="cert-info">Click on a certification to see more details.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="footer-column">
-        <div class="icon">
+        <div class="footer-left">
+            <p><span id="currentyear"></span></p>
+            <p><span id="lastmodified"></span></p>
+        </div>
+        
+        <div class="footer-social">
             <img src="images/fb.svg" alt="facebook" width="25" height="25" loading=lazy>
-            <img src="images/insta.svg" alt="facebook" width="25" height="25" loading=lazy>
-            <img src="images/tiktok.svg" alt="facebook" width="25" height="25" loading=lazy>
-            <img src="images/x_icon.svg" alt="facebook" width="25" height="25" loading=lazy>
-        </div>
-        </div>
-
-        <div class="footer-column">
-        <p><span id="currentyear"></span></p>
-        <p><span id="lastmodified"></span></p>
+            <img src="images/insta.svg" alt="insta" width="25" height="25" loading=lazy>
+            <img src="images/tiktok.svg" alt="tiktok" width="25" height="25" loading=lazy>
+            <img src="images/x_icon.svg" alt="x_twitter" width="25" height="25" loading=lazy>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-right">
         <a href="#" target="_blank">FAQ</a>
         <a href="#" target="_blank">Contact Us</a>
         </div>
