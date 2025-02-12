@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     /* Header starts here */
       header {
         flex-direction: row;
@@ -14,15 +14,16 @@
         justify-content: space-around;
         width: 30px;
         height: 25px;
-        background: transparent;
+        background: none;
         border: none;
         cursor: pointer;
         padding: 0;
+        z-index: 1000;
       }
     
       .hamburger-line {
         width: 100%;
-        height: 3px;
+        height: 4px;
         background-color: var(--font-color);
         transition: all 0.3s ease;
       }
@@ -51,3 +52,37 @@
       }
 }
     /* Header ends here */
+
+    
+#card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#prev-card,
+#next-card {
+    background: none;
+    border: none;
+    font-size: 2rem; /* Adjust size */
+    color: #fff; /* White color for arrows */
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000; /* To ensure buttons are on top */
+}
+
+#prev-card:hover,
+#next-card:hover {
+    color: #FFC632; /* Change color on hover */
+}
