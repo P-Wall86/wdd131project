@@ -236,13 +236,10 @@
       line-height: 1.3;
     }
 
-    .footer-social {
+    .footer-social img{
       filter: invert(100%);
       gap: 10px;
-      margin: 10px;
-    }
-
-    .footer-social img {
+      margin: 5px;
       transform: 0.3s ease-in-out;
     }
 
