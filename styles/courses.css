@@ -218,6 +218,7 @@ footer {
 }
 
 .footer-right a {
+  font-family: var(--font-text);
   color: var(--font-color);
   text-decoration: none;
 }
