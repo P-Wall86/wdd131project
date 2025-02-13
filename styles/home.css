@@ -52,6 +52,69 @@
   }
 
 /* Header ends here */
+/* Main starts here */
+h1 {
+  text-align: center;
+  color: var(--font-color);
+  margin: 0;
+  font-family: var(--font-title);
+  font-weight: 100;
+  font-size: x-large;
+}
+
+/* Middle boxes */
+.box-middle1, .box-middle2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+  position: relative;
+  border: 1px solid var(--accent-color); /*border for orientation*/
+  background-color: var(--secondary-color);
+}
+
+.box-middle1 h2, .box-middle2 h2 {
+  margin: 0 0 10px;
+}
+
+.box-middle1 p {
+  margin: 1rem;
+}
+
+.box-middle2 a {
+  margin-top: 1rem;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.content p {
+  margin: 0rem;
+  width: 50%;
+  text-align: justify;
+}
+
+.content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+}
+
+.content img {
+  align-self: center;
+  margin-left: 2rem;
+  width: 140px;
+  height: 120px;
+}
+
+.box-middle1 .content, .box-middle2 .content {
+  margin-left: 20px;
+}
+/* Middle boxes ends here */
+
 /* Footer starts here */
 footer {
   position: relative;
@@ -100,6 +163,7 @@ footer {
   font-family: var(--font-text);
   color: var(--font-color);
   text-decoration: none;
+  font-size: x-small;
 }
 
 footer a:hover {
