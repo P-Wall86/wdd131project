@@ -1,4 +1,6 @@
-* {
+* 
+*::before,
+*::after {
     box-sizing: border-box;
   }
 
@@ -74,3 +76,5 @@ header {
     display: none;
   }
 /* Header ends here */
+
+/* Main starts here */
