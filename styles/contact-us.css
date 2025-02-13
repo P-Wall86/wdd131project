@@ -73,6 +73,7 @@
 
       margin: 0.7rem;
       border: 1px solid var(--accent-color);
+      border-radius: 0.7rem;
     }
     .contact-item {
       display: flex;
@@ -93,6 +94,7 @@
       margin: 0.7rem;
       padding: 0.5rem;
       border: 1px solid var(--accent-color);
+      border-radius: 0.7rem;
     }
     .loc-map h2 {
       text-align: center;
@@ -119,7 +121,104 @@
       border-radius: 0.7rem;
     }
 
-    
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid var(--accent-color);
+      padding: 0.5rem;
+      border-radius: 0.7rem;
+      margin: 0.7rem;
+    }
+
+    form h2 {
+      text-align: center;
+      color: var(--font-color);
+      margin: 0;
+      font-family: var(--font-title);
+      font-weight: 100;
+      font-size: x-large;
+      text-decoration: underline;
+    }
+
+    label {
+      display: block;
+      margin: 1rem;
+      font-size: medium;
+      color: var(--font-color);
+      font-family: var(--font-text);
+    } 
+
+    label:nth-of-type(3) {
+      padding-top: 2rem;
+      text-align: center;
+      font-size: large;
+    }
+
+    input[type="text"], [type="email"]{
+      margin: 0.5rem;
+      padding: 0.5rem;
+      width: 90%;
+    }
+  
+    .required {
+      color: red; 
+      font-size: 1.2em;
+      margin-left: 4px;
+    }
+
+    select {
+      width: 90%;
+      padding: 8px;
+      margin-bottom: 1.5rem;
+      align-self: center;
+    }
+
+    .checkbox {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .checkbox label {
+      display: inline-block;
+      font-weight: normal;
+      margin:0;
+      padding-left: 0.7rem;
+    }
+  
+    .checkbox input[type="checkbox"] {
+      margin-right: 5px;
+    }
+  
+    textarea#review {
+      height: 7rem;
+      width: 95%;
+      resize: vertical;
+      margin: 0.5rem;
+    }
+  
+    input[type="submit"] {
+      width: 40%;
+      padding: 0.5rem;
+      font-family:var(--font-text);
+      font-size: large;
+      align-self: center;
+      border-radius: 0.7rem;
+    }
+
+    input[type="submit"]:hover {
+      background-color: var(--primary-color);
+      color: var(--accent-color);
+    }
+
+    input[value="Submit"] {
+      padding-top: 0.7rem;
+    }
+/* Main ends here */
 
 /* Footer starts here */
     footer {
@@ -144,7 +243,7 @@
     }
 
     .footer-social img {
-      transform: transform 0.3s ease-in-out;
+      transform: 0.3s ease-in-out;
     }
 
     .footer-social img:hover {
