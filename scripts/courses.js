@@ -29,16 +29,15 @@ document.addEventListener('DOMContentLoaded', () => {
       nav.classList.toggle('active');
     });
   });
-  //Burger
   //Cardrroussel
   document.addEventListener("DOMContentLoaded", () => {
     const cefrLevels = [
         { title: "A1", description: "Beginner: can understand and use basic phrases for everyday situations. Can introduce themselves and ask/answer simple questions.", ageRange: "Age range: 7–10 years old" },
-        { title: "A2", description: "Elementary: can handle simple communication in familiar contexts, such as talking about daily routines or making purchases.", ageRange: "Age range:10–12 years old" },
+        { title: "A2", description: "Elementary: can handle simple communication in familiar contexts, such as talking about daily routines or making purchases.", ageRange: "Age range: 10–12 years old" },
         { title: "B1", description: "Intermediate: can understand the main points of clear standard input and handle most travel situations. Can describe experiences and opinions.", ageRange: "Age range: 12–15 years old" },
         { title: "B2", description: "Upper Intermediate: can interact with fluency and spontaneity. Can produce clear, detailed text on a variety of subjects.", ageRange: "Age range: 15–18 years old" },
         { title: "C1", description: "Advanced: can express ideas fluently and spontaneously, with a high level of grammatical accuracy. Can produce well-structured and detailed writing.", ageRange: "Age range: 18+ years old" },
-        { title: "C2", description: "Proficient: can understand virtually everything read or heard. Can express themselves spontaneously, very fluently, and precisely.", ageRange: "Age range:Adults" }
+        { title: "C2", description: "Proficient: can understand virtually everything read or heard. Can express themselves spontaneously, very fluently, and precisely.", ageRange: "Age range: Adults" }
     ];
 
     let currentIndex = 0;
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
     createCard(currentIndex);
-    //Cardrroussel
+    
   });
     document.addEventListener('DOMContentLoaded', () => {
       const certLinks = document.querySelectorAll('.certification-list a');

@@ -74,12 +74,23 @@ h1 {
 
 .card {
   background-color: var(--secondary-color);
-  padding: 20px;
-  margin: 10px;
+  padding: 1.5rem;
+  margin: 1rem;
   border-radius: 8px;
-  width: 250px;
+  width: 70%;
   text-align: center;
   box-shadow: 0 0 10px var(--accent-color);
+}
+
+.card h2 {
+  font-family: var(--font-family);
+  font-size: xx-large;
+}
+
+.card p {
+  font-family: var(--font-text);
+  line-height: 1.5;
+  text-align: justify;
 }
 
 #prev-card,
@@ -111,10 +122,16 @@ h1 {
   margin: 10px;
 }
 
+.certifications h2 {
+  font-family: var(--font-family);
+  font-weight: 100;
+}
+
 .certification-list {
   list-style: none;
   padding: 0;
   margin-right: 20px;
+  margin-top: 40px;
   text-align: left;
   font-family: var(--font-family);
   font-weight: 100;
@@ -135,11 +152,12 @@ h1 {
 }
 
 .certification-info {
-  padding: 20px;
+  padding: 1rem;
   border: 1px solid var(--accent-color);
-  width: 300px;
+  width: 90%;
   min-height: 150px;
   background-color: #242424;
+  border-radius: 1rem;
 }
 
 .certification-info h3 {
@@ -152,20 +170,61 @@ h1 {
   font-size: 1rem;
   line-height: 1.6;
   font-family: var(--font-text);
+  text-align: justify;
 }
 /* Certifications section ends here */
 /* Footer starts here */
 footer {
-  position: relative; /* Establishes a positioning context */
+  position: relative;
+}
+
+.footer-left {
+    margin: 10px;
+
+    color: var(--font-color);
+
+    font-family: var(--font-text);
+    font-size: x-small;
+    font-weight: 400;
+  
+    line-height: 1.3;
+}
+
+.footer-social {
+  filter: invert(100%);
+  gap: 10px;
+  margin: 10px;
+}
+
+.footer-social img {
+  transform: transform 0.3s ease-in-out;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
 }
 
 .footer-right {
-  position: absolute; /* Positions .footer-right absolutely */
-  top: 50%; /* Moves .footer-right down by 50% of the footer's height */
-  right: 0; /* Aligns .footer-right to the right */
-  transform: translateY(-50%); /* Centers .footer-right vertically */
-  display: flex; /* Makes .footer-right a flex container */
-  flex-direction: column; /* Stacks the links vertically */
-  gap: 5px; /* Optional: Adds spacing between the links */
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  
+  top: 40%;
+  right: 0;
+  margin: 10px;
+
+  transform: translateY(-50%);
+  gap: 5px;
+}
+
+.footer-right a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
 }
 }
+/* Footer ends here */
