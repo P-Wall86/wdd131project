@@ -30,3 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.toggle('active');
   });
 });
+
+//Herald's
+document.addEventListener('DOMContentLoaded', () => {
+  const heraldTitle = document.querySelector('.herald h2');
+  heraldTitle.innerHTML = '🎺 Herald\'s Call';
+});

@@ -59,31 +59,59 @@ h1 {
   margin: 0;
   font-family: var(--font-title);
   font-weight: 100;
-  font-size: x-large;
+  font-size: 1.8rem;
 }
 
 /* Middle boxes */
 .box-middle1, .box-middle2 {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 1rem;
-  position: relative;
   border: 1px solid var(--accent-color); /*border for orientation*/
   background-color: var(--secondary-color);
+  border-radius: 0.7rem;
 }
 
 .box-middle1 h2, .box-middle2 h2 {
-  margin: 0 0 10px;
-}
-
-.box-middle1 p {
   margin: 1rem;
+  font-family: var(--font-title);
+  font-weight: 100;
+  font-size: large;
 }
 
-.box-middle2 a {
-  margin-top: 1rem;
+.box-middle1 h2 {
+  background-color: var(--primary-color);
+  border-radius: 0.7rem;
+  width: 55%;
+  padding: 0.7rem;
+  color: var(--font-color);
 }
+
+.box-middle2 h2 {
+  background-color: var(--primary-color);
+  border-radius: 0.7rem;
+  width: 55%;
+  padding: 0.7rem;
+  color: var(--font-color);
+}
+
+.box-middle1 p, .box-middle2 p {
+  margin: 1rem;
+  font-family: var(--font-text);
+  font-size: small;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.box-middle1 a, .box-middle2 a {
+  font-family: var(--font-text);
+  font-size: x-small;
+  color: var(--primary-color);
+  margin: 0.7rem;
+}
+
 .content {
   display: flex;
   flex-direction: row;
@@ -92,15 +120,9 @@ h1 {
 }
 
 .content p {
-  margin: 0rem;
+  margin: 0;
   width: 50%;
   text-align: justify;
-}
-
-.content a {
-  display: inline-block;
-  margin-top: 10px;
-  color: blue;
 }
 
 .content img {
@@ -114,6 +136,70 @@ h1 {
   margin-left: 20px;
 }
 /* Middle boxes ends here */
+/*Herald box starts here*/
+
+.herald {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  border: 1px solid var(--accent-color);
+  border-radius: 0.7rem;
+  width: 45%; 
+  box-sizing: border-box;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
+}
+
+.herald h2 {
+  font-size: 1rem;
+  margin: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-title);
+  font-weight: 100;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  color: var(--font-color);
+  width: 90%;
+}
+
+.herald p {
+  font-size: small;
+  margin: 0.5rem;
+  text-align: justify;
+  font-family: var(--font-text);
+  line-height: 1.5;
+}
+
+.herald img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  font-family: var(--font-text);
+}
+
+.cta-button:hover {
+  color: var(--accent-color);
+}
+/*Herald box ends here*/
 
 /* Footer starts here */
 footer {
@@ -126,8 +212,8 @@ footer {
     color: var(--font-color);
 
     font-family: var(--font-text);
-    font-size: x-small;
-    font-weight: 400;
+    font-size: 0.8rem;
+    font-weight: 100;
   
     line-height: 1.3;
 }
@@ -135,7 +221,7 @@ footer {
 .footer-social img {
   filter: invert(100%);
   gap: 10px;
-  margin: 5px;
+  margin-left: 0.6rem;
   transform: 0.3s ease-in-out;
 }
 
@@ -148,7 +234,7 @@ footer {
   display: flex;
   flex-direction: column;
   
-  top: 40%;
+  top: 30%;
   right: 0;
   margin: 10px;
 
@@ -160,7 +246,7 @@ footer {
   font-family: var(--font-text);
   color: var(--font-color);
   text-decoration: none;
-  font-size: x-small;
+  font-size: 0.8rem;
 }
 
 footer a:hover {

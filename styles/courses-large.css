@@ -62,7 +62,7 @@ header {
     color: var(--font-color);
     font-size: 20px;
 
-    font-family:var(--font-family);
+    font-family:var(--font-title);
     font-weight: 200;
     font-size:x-large;
   }
