@@ -1,5 +1,5 @@
 console.log('Scripts loaded');
-
+//Footer
 var currentYear = new Date().getFullYear();
 var lastModified = document.lastModified;
 
@@ -9,6 +9,7 @@ console.log("Last Modified:", lastModified);
 document.querySelector("footer p:first-child").innerHTML = "&copy" + currentYear + " - Pamela Pared - Argentina ";
 document.querySelector("footer p:nth-child(2)").innerHTML = "Last modified: " + lastModified;
 
+//Active
 const navLinks = document.querySelectorAll('.nav a');
 const currentPage = window.location.pathname.split('/').pop();
 
@@ -19,6 +20,7 @@ navLinks.forEach(link => {
     }
 });
 
+//Burger
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger');
   const nav = document.querySelector('.nav');

@@ -1,6 +1,5 @@
 @media (max-width: 500px) {
     /* Header starts here */
-
       header {
         flex-direction: row;
         justify-content: space-between;
