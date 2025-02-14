@@ -1,3 +1,80 @@
+* 
+*::before,
+*::after {
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-color: #031b2c;
+    --secondary-color: #f0f4f8;
+    --accent-color: #FFC632;
+    --font-color: #EBEBEB;
+    --font-title: "Bevan", serif;
+    --font-text: "Cutive", serif;
+  }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+  /* Header starts here */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav li {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: x-large;
+    list-style: none;
+  }
+
+  .nav a {
+    text-decoration: none;
+    color: var(--font-color);
+
+    font-family: var(--font-title);
+    font-size: 20px;
+    font-size:x-large;
+  }
+  
+  .nav a.active {
+    color: var(--accent-color);
+  }
+
+  .hamburger {
+    display: none;
+  }
 @media (max-width: 500px) {
   /* Header starts here */
     header {
@@ -52,9 +129,6 @@
     }
 /* Header ends here */
 /* Main starts here */
-    main {
-      max-width: 100%;
-    }
 
     h1 {
       text-align: center;
@@ -75,6 +149,11 @@
       border: 1px solid var(--accent-color);
       border-radius: 0.7rem;
     }
+
+    .contact-data img {
+      display: none;
+    }
+
     .contact-item {
       display: flex;
       align-items: center;
@@ -82,6 +161,7 @@
       margin-bottom: 10px;
       color: var(--font-color); 
     }
+    
     .contact-item img {
       filter: invert(100%);
     }
@@ -162,7 +242,7 @@
     }
   
     .required {
-      color: red; 
+      color: var(--accent-color); 
       font-size: 1.2em;
       margin-left: 4px;
     }
