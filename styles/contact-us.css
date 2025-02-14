@@ -150,7 +150,7 @@ header {
       border-radius: 0.7rem;
     }
 
-    .contact-data img {
+    .contact-data img:not(:first-child) {
       display: none;
     }
 
