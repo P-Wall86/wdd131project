@@ -126,8 +126,10 @@ h1 {
 }
 
 .content img {
+  display: block;
+  justify-content: center;
   align-self: center;
-  margin-left: 2rem;
+  margin-left: 2.3rem;
   width: 150px; 
   height: 340px;
   border-radius: 0.7rem;
@@ -249,11 +251,13 @@ h1 {
 
 .cta-button2 {
   display: inline-block;
+  justify-content: center;
+  align-items: center;
   color: var(--primary-color);
   background-color: var(--secondary-color);
   text-decoration: none;
   padding: 1rem;
-  margin: 1.5rem;
+  margin: 2rem;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
