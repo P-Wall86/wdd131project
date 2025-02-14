@@ -128,8 +128,9 @@ h1 {
 .content img {
   align-self: center;
   margin-left: 2rem;
-  width: 140px;
-  height: 120px;
+  width: 150px; 
+  height: 340px;
+  border-radius: 0.7rem;
 }
 
 .box-middle1 .content, .box-middle2 .content {
@@ -200,6 +201,70 @@ h1 {
   color: var(--accent-color);
 }
 /*Herald box ends here*/
+/* Light CTA starts here*/
+.cta-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  margin: 20px;
+  gap: 5px;
+}
+
+.herald, .newsletter-cta {
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.newsletter-cta {
+  text-align: right;
+  max-width: 300px;
+  width: 50%;
+}
+
+.newsletter-cta h3 {
+  font-family: var(--font-title);
+  font-weight: 100;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  color: var(--font-color);
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.newsletter-cta p {
+  font-family: var(--font-text);
+  font-size: small;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 0.5rem;
+  color: var(--font-color);
+  width: 90%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.cta-button2 {
+  display: inline-block;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  padding: 1rem;
+  margin: 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-text);
+}
+
+.cta-button2:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
 
 /* Footer starts here */
 footer {

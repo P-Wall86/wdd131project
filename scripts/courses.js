@@ -48,16 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
   
     function createCard(index) {
         const level = cefrLevels[index];
-
        
         cardContainer.innerHTML = `
-            <button id="prev-card" style="display: ${index === 0 ? 'none' : 'inline-block'}">&lt;</button>
+            <button id="prev-card" style="visibility: ${index === 0 ? 'hidden' : 'visible'}">&lt;</button>
             <div class="card">
                 <h2>${level.title}</h2>
                 <p>${level.description}</p>
                 <p class="age-range">${level.ageRange}</p>
             </div>
-            <button id="next-card" style="display: ${index === cefrLevels.length - 1 ? 'none' : 'inline-block'}">&gt;</button>
+            <button id="next-card" style="visibility: ${index === cefrLevels.length - 1 ? 'hidden' : 'visible'}">&gt;</button>
         `;
 
         const prevButton = document.getElementById("prev-card");
@@ -80,8 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
     createCard(currentIndex);
     
   });
+
+//Certs
     document.addEventListener('DOMContentLoaded', () => {
-      const certLinks = document.querySelectorAll('.certification-list a');
       const certTitle = document.getElementById('cert-title');
       const certInfo = document.getElementById('cert-info');
       
@@ -105,19 +105,33 @@ document.addEventListener('DOMContentLoaded', () => {
           proficiency: {
               title: 'Cambridge Proficiency',
               info: 'The Cambridge Proficiency exam (CPE) is the highest-level exam offered by Cambridge English, proving you have near-native proficiency in English.'
-          }
+          },
+          toeic: {
+            title: 'TOEIC',
+            info: "The Test of English for International Communication assesses workplace English skills for non-native speakers. It evaluates reading, listening, speaking, and writing skills to determine a student's ability to use and understand English in an academic environment."
+        },
       };
+
+        const toeicLink = document.createElement('a');
+        toeicLink.href = '#';
+        toeicLink.textContent = 'TOEIC';
+        toeicLink.setAttribute('data-cert', 'toeic');
+
+        const certList = document.querySelector('.certification-list');
+        certList.appendChild(toeicLink);
+
+        const certLinks = document.querySelectorAll('.certification-list a');
   
-      certLinks.forEach(link => {
-          link.addEventListener('click', (e) => {
-              e.preventDefault();
-              const certType = e.target.getAttribute('data-cert');
-              const certData = certDetails[certType];
+        certLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const certType = e.target.getAttribute('data-cert');
+                const certData = certDetails[certType];
               
-              if (certData) {
-                  certTitle.textContent = certData.title;
-                  certInfo.textContent = certData.info;
-              }
-          });
-    });
+                if (certData) {
+                    certTitle.textContent = certData.title;
+                    certInfo.textContent = certData.info;
+                }
+            });
+        });
 });
