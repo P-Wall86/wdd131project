@@ -181,6 +181,8 @@ h1 {
   align-items: center;
   margin: 1rem;
   padding-left: 1rem;
+  width: 100%;
+  min-height: 300px;
 }
 
 .card {
