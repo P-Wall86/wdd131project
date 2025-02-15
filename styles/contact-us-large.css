@@ -304,10 +304,10 @@ footer {
 
 .footer-social {
   display: flex;
-  flex-wrap: wrap; /* Allows wrapping into multiple rows */
-  justify-content: center; /* Centers the icons horizontally */
-  align-items: center; /* Aligns icons in the center */
-  max-width: 120px; /* Restrict width to ensure a 2x2 layout */
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center; 
+  max-width: 120px; 
 }
 
 .footer-social img:nth-child(1),
