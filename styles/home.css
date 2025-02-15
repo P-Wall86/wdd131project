@@ -71,19 +71,26 @@
   border: 1px solid var(--accent-color);
   background-color: var(--secondary-color);
   border-radius: 0.7rem;
-  max-width: 100%;
+  width: 100%;
   }
 
 .box-middle1 p, .box-middle2 p {
-  margin: 1rem;
+  margin: 0.7rem;
   font-size: medium;
 }
 
 .box-middle1 a, .box-middle2 a {
   font-family: var(--font-text);
-  font-size: x-small;
   color: var(--primary-color);
   margin: 0.7rem;
+  font-size: medium;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 0.7rem;
+}
+
+.box-middle1 a, .box-middle2 a:visited {
+  color: purple;
 }
 
 .box-middle1 picture,.box-middle2 picture {
@@ -106,15 +113,16 @@
 
 .content p {
   margin-top: 1rem;
-  width: 50%;
+  width: 55%;
   height: 40%;
+  font-size: medium;
 }
 
 .content picture {
   display: block;
-  margin: 0;
+  margin-left: 1rem;
   align-self: center;
-  width: 38%; 
+  width: 40%; 
   border-radius: 0.7rem;
 }
 
@@ -130,6 +138,7 @@
 }
 
 .herald {
+  position: relative;
   background-color: var(--secondary-color);
   padding: 1rem;
   border: 1px solid var(--accent-color);
@@ -145,25 +154,16 @@
 
 .herald h2 {
   font-size: large;
-  margin: 0.7rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: var(--font-title);
-  font-weight: 100;
-  background-color: var(--primary-color);
   padding: 0.5rem;
-  border-radius: 0.7rem;
-  color: var(--font-color);
   width: 90%;
 }
 
 .herald p {
   font-size: medium;
   margin: 0.5rem;
-  text-align: justify;
-  font-family: var(--font-text);
-  line-height: 1.5;
 }
 
 .herald img {
@@ -192,20 +192,28 @@
 }
 
 .cta-container {
+  position: static;
   display: flex;
   flex-direction: row;
-  align-items: center; 
-  margin: 20px;
-  gap: 5px;
+  align-items: center;
+  gap: 20px; 
+  padding: 20px 0; 
 }
 
 .herald, .newsletter-cta {
-  width: 50%;
-  box-sizing: border-box;
-  text-align: center;
+  position: static;
+  width: 90%;
+  max-width: 100%;
+  transform: none;
+  top: auto; 
+  left: auto;
+  right: auto;
+  margin: 0 auto;
 }
 
+
 .newsletter-cta {
+  position: relative;
   text-align: right;
   max-width: 300px;
   width: 50%;
@@ -215,14 +223,9 @@
   text-align: center; 
 }
 
-.newsletter-cta h3 {
-  font-family: var(--font-title);
-  font-weight: 100;
+.newsletter-cta h2 {
   font-size: x-large;
-  background-color: var(--primary-color);
   padding: 0.5rem;
-  border-radius: 0.7rem;
-  color: var(--font-color);
   width: 90%;
   margin: 0 auto;
   text-align: center;
@@ -232,15 +235,11 @@
 .newsletter-cta p {
   font-family: var(--font-text);
   color: var(--primary-color);
-  font-size: medium;
+  font-size: large;
   font-weight: bold;
-  line-height: 1.5;
-  text-align: justify;
   margin: 0.5rem;
-  
   width: 90%;
   margin: 0 auto;
-  text-align: justify;
 
   border: 3px solid var(--accent-color);
   border-radius: 0.7rem;

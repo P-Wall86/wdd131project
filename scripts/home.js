@@ -36,3 +36,50 @@ document.addEventListener('DOMContentLoaded', () => {
   const heraldTitle = document.querySelector('.herald h2');
   heraldTitle.innerHTML = '🎺 Herald\'s Call';
 });
+
+//?
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("JavaScript loaded");
+
+  function updateCTA() {
+      const herald = document.querySelector(".herald");
+      const newsletter = document.querySelector(".newsletter-cta");
+      const screenWidth = window.innerWidth;
+      console.log(document.querySelector(".herald"));
+      console.log(document.querySelector(".newsletter-cta"));
+      
+      if (screenWidth <= 1352 && screenWidth > 640) {
+          herald.classList.add("collapsed");
+          newsletter.classList.add("collapsed");
+
+          if (!document.querySelector(".cta-arrow-left")) {
+              const leftArrow = document.createElement("div");
+              leftArrow.classList.add("cta-arrow", "cta-arrow-left");
+              leftArrow.innerHTML = "&#9664;";
+              leftArrow.addEventListener("click", function () {
+                console.log("Left arrow clicked");
+                  herald.classList.toggle("collapsed");
+              });
+              document.querySelector(".cta-container").appendChild(leftArrow);
+          }
+
+          if (!document.querySelector(".cta-arrow-right")) {
+              const rightArrow = document.createElement("div");
+              rightArrow.classList.add("cta-arrow", "cta-arrow-right");
+              rightArrow.innerHTML = "&#9654;";
+              rightArrow.addEventListener("click", function () {
+                console.log("Right arrow clicked");
+                  newsletter.classList.toggle("collapsed");
+              });
+              document.querySelector(".cta-container").appendChild(rightArrow);
+          }
+      } else {
+          herald.classList.remove("collapsed");
+          newsletter.classList.remove("collapsed");
+          document.querySelectorAll(".cta-arrow").forEach(el => el.remove());
+      }
+  }
+
+  window.addEventListener("resize", updateCTA);
+  updateCTA();
+});
