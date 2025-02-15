@@ -26,7 +26,6 @@ body {
   justify-content: space-between;
 }
 
-/* Header starts here */
 header {
   display: flex;
   flex-direction: column;
@@ -64,7 +63,7 @@ header {
 
   font-family:var(--font-title);
   font-weight: 200;
-  font-size:x-large;
+  font-size:xx-large;
 }
 
 .nav a.active {
@@ -74,7 +73,6 @@ header {
 .hamburger {
   display: none;
 }
-/* Header ends here */
 
 main {
   flex-grow: 1;
@@ -82,120 +80,186 @@ main {
   flex-direction: column;
 }
 
-@media (max-width: 500px) {
-    /* Header starts here */
-      header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        position: relative;
-      }
-    
-      .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 25px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 1000;
-      }
-    
-      .hamburger-line {
-        width: 100%;
-        height: 4px;
-        background-color: var(--font-color);
-        transition: all 0.3s ease;
-      }
-    
-      .nav {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--primary-color);
-        padding: 10px 0;
-        z-index: 999;
-      }
-    
-      .nav.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-    
-      .nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-      }
-
-    /* Header ends here */
-
-/* Main starts here */
 h1 {
   text-align: center;
   color: var(--font-color);
   margin: 0;
   font-family: var(--font-title);
   font-weight: 100;
-  font-size: 2.3rem;
 }
 
-/* Card container starts here */
+h2 {
+margin: 1rem;
+font-family: var(--font-title);
+font-weight: 100;
+background-color: var(--primary-color);
+border-radius: 0.7rem;
+color: var(--font-color);
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+  font-family: var(--font-text);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  padding: 10px;
+}
+
+.footer-left p {
+  margin: 10px;
+
+  color: var(--font-color);
+
+  font-family: var(--font-text);
+  font-size: x-large;
+  font-weight: 400;
+
+  line-height: 1.3;
+}
+
+.footer-social img {
+  filter: invert(100%);
+  gap: 10px;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+  width: 50px;
+  height: 50px;
+}
+
+.footer-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-right a {
+  font-family: var(--font-text);
+  color: var(--font-color);
+  text-decoration: none;
+  font-size: x-large;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
+    
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+  }
+    
+  .hamburger-line {
+    width: 100%;
+    height: 4px;
+    background-color: var(--font-color);
+    transition: all 0.3s ease;
+  }
+    
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 10px 0;
+    z-index: 999;
+  }
+    
+  .nav.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+h1 {
+  color: var(--font-color);
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+}
+
 #card-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: auto;
   margin: 1rem;
-  padding-left: 1rem;
+  padding: 1rem;
 }
 
 .card {
-  background-color: var(--secondary-color);
-  padding: 1.5rem;
+  padding: 2rem;
   margin: 1rem;
-  border-radius: 8px;
-  width: 70%;
+  border-radius: 0.7rem;
+  width: 80%;
+  height: auto;
   text-align: center;
   box-shadow: 0 0 10px var(--accent-color);
+  background-color: var(--secondary-color);
 }
 
 .card h2 {
   font-family: var(--font-title);
-  font-size: xx-large;
+  font-size: 2.5rem;
   background-color: var(--primary-color);
   color: var(--font-color);
   border-radius: 0.7rem;
   font-weight: 100;
+  padding: 1rem;
 }
 
 .card p {
   font-family: var(--font-text);
-  line-height: 1.5;
-  text-align: justify;
+  font-size: x-large;
 }
 
 #prev-card,
 #next-card {
     background: none;
     border: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--accent-color);
     cursor: pointer;
     padding: 0;
     z-index: 1000;
 }
 
-/* Card container ends here */
-/* Certifications section starts here */
 .certifications {
-  padding: 1.4rem;
+  padding: 1rem;
   margin: 1rem;
   text-align: center;
   color: var(--font-color);
@@ -212,31 +276,29 @@ h1 {
 }
 
 .certifications h2 {
-  font-family: var(--font-title);
-  font-weight: 100;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   border-radius: 0.7rem;
+  padding: 1rem;
+  font-size: xx-large;
 }
 
 .certification-list {
   list-style: none;
-  padding: 0;
-  margin-right: 20px;
-  margin-top: 40px;
-  text-align: left;
+  text-align: center;
+  padding: 1rem;
   font-family: var(--font-title);
   font-weight: 100;
 }
 
 .certification-list li {
-  margin: 10px 0;
+  margin: 1rem;
 }
 
 .certification-list a {
   text-decoration: none;
   color: var(--font-color);
-  font-size: 1.2rem;
+  font-size: x-large;
 }
 
 .certification-list a:hover {
@@ -246,8 +308,7 @@ h1 {
 .certification-info {
   padding: 1rem;
   border: 1px solid var(--accent-color);
-  width: 90%;
-  min-height: 150px;
+  min-height: auto;
   background-color: #242424;
   border-radius: 1rem;
 }
@@ -256,27 +317,27 @@ h1 {
   margin-bottom: 10px;
   font-family: var(--font-title);
   font-weight: 100;
+  font-size: x-large;
 }
 
 .certification-info p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: large;
   font-family: var(--font-text);
-  text-align: justify;
 }
-/* Certifications section ends here */
 
 .cta {
   text-align: center;
   margin: 1rem;
   padding: 2rem;
-  font-size: 1.2rem;
 }
 
 .cta p {
+  text-align: center;
   margin: 1rem;
+  padding: 0.5rem;
   color: var(--font-color);
   font-family: var(--font-text);
+  font-size: xx-large;
 }
 
 .cta-button {
@@ -289,6 +350,7 @@ h1 {
   font-weight: bold;
   transition: background-color 0.3s ease;
   font-family: var(--font-text);
+  font-size: x-large;
 }
 
 .cta-button:hover {
@@ -308,16 +370,14 @@ footer {
     color: var(--font-color);
 
     font-family: var(--font-text);
-    font-size: 0.8rem;
+    font-size: medium;
     font-weight: 400;
-  
-    line-height: 1.3;
 }
 
 .footer-social img {
   filter: invert(100%);
   gap: 10px;
-  margin: 5px;
+  margin: 0.5rem;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -330,7 +390,7 @@ footer {
   display: flex;
   flex-direction: column;
   
-  top: 40%;
+  top: 20%;
   right: 0;
   margin: 10px;
 
@@ -342,7 +402,7 @@ footer {
   font-family: var(--font-text);
   color: var(--font-color);
   text-decoration: none;
-  font-size: 0.8rem;
+  font-size: medium;
 }
 
 footer a:hover {
@@ -350,4 +410,3 @@ footer a:hover {
   color: var(--accent-color);
 }
 }
-/* Footer ends here */
