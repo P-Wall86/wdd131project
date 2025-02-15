@@ -28,7 +28,6 @@
     justify-content: space-between;
 }
 
-  /* Header starts here */
 header {
     display: flex;
     flex-direction: column;
@@ -65,7 +64,7 @@ header {
 
     font-family: var(--font-title);
     font-size: 20px;
-    font-size:x-large;
+    font-size:xx-large;
   }
   
   .nav a.active {
@@ -75,28 +74,100 @@ header {
   .hamburger {
     display: none;
   }
-@media (max-width: 500px) {
-  /* Header starts here */
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        position: relative;
-    }
+
+  h1 {
+    text-align: center;
+    color: var(--font-color);
+    margin: 0;
+    font-family: var(--font-title);
+    font-weight: 100;
+  }
+  
+  h2 {
+  margin: 1rem;
+  font-family: var(--font-title);
+  font-weight: 100;
+  background-color: var(--primary-color);
+  border-radius: 0.7rem;
+  color: var(--font-color);
+  }
+  
+  p {
+    line-height: 1.5;
+    text-align: justify;
+    font-family: var(--font-text);
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    padding: 10px;
+  }
+  
+  .footer-left p {
+    margin: 10px;
+  
+    color: var(--font-color);
+  
+    font-family: var(--font-text);
+    font-size: x-large;
+    font-weight: 400;
+  
+    line-height: 1.3;
+  }
+  
+  .footer-social img {
+    filter: invert(100%);
+    gap: 10px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .footer-right a {
+    font-family: var(--font-text);
+    color: var(--font-color);
+    text-decoration: none;
+    font-size: x-large;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+
+@media (max-width: 640px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+  }
     
-    .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 25px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 1000;
-    }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30zpx;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+  }
     
     .hamburger-line {
         width: 100%;
@@ -126,27 +197,23 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 10px;
-    }
-/* Header ends here */
-/* Main starts here */
+    }                                 
 
     h1 {
-      text-align: center;
-      color: var(--font-color);
-      margin: 0;
-      font-family: var(--font-title);
-      font-weight: 100;
-      font-size: 2.3rem;
+      font-size: 2.5rem;
     }
+
     .contact-data {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       font-family: var(--font-text);
+      font-size: large;
+      font-weight: 400;
 
       margin: 0.7rem;
-      border: 1px solid var(--accent-color);
+      border: 3px solid var(--accent-color);
       border-radius: 0.7rem;
     }
 
@@ -157,8 +224,8 @@ header {
     .contact-item {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 0.7rem;
+      margin: 1rem;
       color: var(--font-color); 
     }
     
@@ -173,24 +240,21 @@ header {
       justify-content: center;
       margin: 0.7rem;
       padding: 0.5rem;
-      border: 1px solid var(--accent-color);
+      border: 3px solid var(--accent-color);
       border-radius: 0.7rem;
     }
+
     .loc-map h2 {
       text-align: center;
-      color: var(--font-color);
-      margin: 0;
-      font-family: var(--font-title);
-      font-weight: 100;
-      font-size: x-large;
+      margin: 1rem;
+      font-size: xx-large;
       text-decoration: underline;
     }
 
     .loc-map p {
-      font-family: var(--font-text);
       color: var(--font-color);
-      text-align: justify;
       padding: 0.5rem;
+      font-size: large;
       line-height: 1.7;
     }
 
@@ -205,26 +269,25 @@ header {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border: 1px solid var(--accent-color);
+      border: 3px solid var(--accent-color);
       padding: 0.5rem;
       border-radius: 0.7rem;
       margin: 0.7rem;
+      box-sizing: border-box;
     }
 
     form h2 {
       text-align: center;
-      color: var(--font-color);
       margin: 0;
-      font-family: var(--font-title);
       font-weight: 100;
-      font-size: x-large;
+      font-size: xx-large;
       text-decoration: underline;
     }
 
     label {
       display: block;
       margin: 1rem;
-      font-size: medium;
+      font-size: x-large;
       color: var(--font-color);
       font-family: var(--font-text);
     } 
@@ -232,13 +295,14 @@ header {
     label:nth-of-type(3) {
       padding-top: 2rem;
       text-align: center;
-      font-size: large;
+      font-size: x-large;
     }
 
     input[type="text"], [type="email"]{
-      margin: 0.5rem;
-      padding: 0.5rem;
       width: 90%;
+      margin: 0.7rem;
+      padding: 1rem;
+      align-self: center;
     }
   
     .required {
@@ -249,14 +313,13 @@ header {
 
     select {
       width: 90%;
-      padding: 8px;
-      margin-bottom: 1.5rem;
+      padding: 0.7rem;
+      margin:0.7rem;
       align-self: center;
     }
 
     .checkbox {
-      margin-top: 20px;
-      margin-bottom: 20px;
+      margin: 1rem;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -265,8 +328,7 @@ header {
   
     .checkbox label {
       display: inline-block;
-      font-weight: normal;
-      margin:0;
+      margin:1rem;
       padding-left: 0.7rem;
     }
   
@@ -279,15 +341,17 @@ header {
       width: 95%;
       resize: vertical;
       margin: 0.5rem;
+      align-self: center;
     }
   
     input[type="submit"] {
       width: 40%;
-      padding: 0.5rem;
+      padding: 1rem;
       font-family:var(--font-text);
-      font-size: large;
+      font-size: x-large;
       align-self: center;
       border-radius: 0.7rem;
+      margin-bottom: 0.7rem;
     }
 
     input[type="submit"]:hover {
@@ -295,25 +359,18 @@ header {
       color: var(--accent-color);
     }
 
-    input[value="Submit"] {
-      padding-top: 0.7rem;
-    }
-/* Main ends here */
+  footer {
+    position: relative;
+  }
 
-/* Footer starts here */
-    footer {
-  position: relative;
-    }
-
-    .footer-left {
+    .footer-left p {
       margin: 10px;
     
       color: var(--font-color);
   
       font-family: var(--font-text);
-      font-size: 0.8rem;
+      font-size: medium;
       font-weight: 400;
-      line-height: 1.3;
     }
 
     .footer-social img{
@@ -332,7 +389,7 @@ header {
       display: flex;
       flex-direction: column;
 
-      top: 40%;
+      top: 20%;
       right: 0;
       margin: 10px;
     
@@ -344,12 +401,11 @@ header {
       font-family: var(--font-text);
       color: var(--font-color);
       text-decoration: none;
-      font-size: 0.8rem;
+      font-size: medium;
     }
 
     footer a:hover {
       text-decoration: underline;
       color: var(--accent-color);
     }
-/* Footer ends here */
 }
