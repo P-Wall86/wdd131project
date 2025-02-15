@@ -1,4 +1,4 @@
-@media (min-width: 1310px) {
+@media (min-width: 1280px) {
   .hamburger {
     display: none;
   }
@@ -138,9 +138,8 @@ h1 {
 
 .herald h2 {
   font-size: medium;
-  margin: 0.7rem;
+  margin: 0.5rem;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-family: var(--font-title);
   font-weight: 100;
@@ -148,7 +147,7 @@ h1 {
   padding: 0.5rem;
   border-radius: 0.7rem;
   color: var(--font-color);
-  width: 100;
+  width: 100%;
 }
 
 .herald img {
